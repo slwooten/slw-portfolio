@@ -28,7 +28,7 @@ header h1 {
     font-size: 250%;
     font-family: sans-serif;
     color: white;
-    padding: 20px 20px;   
+    padding: 1%;   
 }
 
 nav {
@@ -51,12 +51,14 @@ h2 {
     font-size: 275%;
     border-bottom: 2px solid #ff6663;
 }
+
 .aboutme {
     display: flex;
-    justify-content: space-around;
-    padding-top: 30px;
+    gap: 10%;
     align-items: baseline;
+    padding-left: 3%;
 }
 
-
-
+.aboutme p {
+    margin-right: 30%;
+}
