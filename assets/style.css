@@ -9,8 +9,8 @@ html {
   }
 
 body {
-    background-color: #fefdff;
-    color: #ff6663;
+    background-color: #f7f7ff;
+    color: #495867;
     font-family: sans-serif;
 }
 
@@ -19,16 +19,22 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    background-color: #c1bfb5;
+    background-color: #495867;
     width: 100%;
-    padding: 20px 0px 20px 20px;
+    padding: 0px 0px 40px 0px;
 }
 
 header h1 {
-    font-size: 250%;
+    font-size: 275%;
     font-family: sans-serif;
-    color: white;
-    padding: 1%;   
+    font-style: italic;
+    background-color: #8aea92;
+    color: #f7f7ff;
+    border: 3px solid #f7f7ff;
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 4%; 
+    border-radius: 0 0 8% 0;  
 }
 
 nav {
@@ -39,16 +45,17 @@ nav {
 nav a {
     text-decoration: none;
     font-size: 130%;
-    color: white;
+    color: #f7f7ff;
     padding: 15px;
 }
 
 nav a:hover {
-
+    color: #8aea92;
+    transition: 250ms ease;
 }
 
 h2 {
-    font-size: 275%;
+    font-size: 250%;
     /* border: 2px solid #ff6663; */
     padding: 8px;
     text-align: right;
@@ -56,14 +63,29 @@ h2 {
 
 /* About me formatting */
 
-.sidebar-aboutme, .content-aboutme {
-    padding: 15px 10px 15px 10px;
-}
-
-.aboutme {
+.maincontent {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    margin-bottom: 5%;
+}
+
+
+
+.sidebar-aboutme,
+.sidebar-work,
+.sidebar-contact {
+    background-color: #495867;
+    color: #f7f7ff;
+    border: 3px solid #8aea92;
+    font-style: italic;
+    margin-right: 2%;
+    border-radius: 0 8% 8% 0;
+}
+
+.sidebar-aboutme, .content-aboutme {
+    padding: 20px 25px 20px 10px;
+    margin-top: 4%;
 }
 
 .aboutme > .sidebar-aboutme {
@@ -79,13 +101,7 @@ h2 {
 /* Work section formatting */
 
 .sidebar-work, .content-work {
-    padding: 15px 10px 15px 10px;
-}
-
-.work {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    padding: 20px 25px 20px 10px;
 }
 
 .work > .sidebar-work {
@@ -100,14 +116,14 @@ h2 {
 
 /* Contact info formattiing */
 
-.sidebar-contact, .content-contact {
-    padding: 15px 10px 15px 10px;
-}
-
 .contactinfo {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
+}
+
+.sidebar-contact, .content-contact {
+    padding: 20px 25px 20px 10px;
 }
 
 .contactinfo > .sidebar-contact {
@@ -124,4 +140,11 @@ h2 {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 30px 0;
+    background-color: yellow;
 }
