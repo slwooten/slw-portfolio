@@ -49,16 +49,27 @@ nav a:hover {
 
 h2 {
     font-size: 275%;
-    border-bottom: 2px solid #ff6663;
+    border: 2px solid #ff6663;
+    padding: 8px;
+}
+
+
+.sidebar-aboutme, .content-aboutme {
+    padding: 15px 10px 15px 10px;
 }
 
 .aboutme {
     display: flex;
-    gap: 10%;
-    align-items: baseline;
-    padding-left: 3%;
+    flex-wrap: wrap;
+    align-items: flex-end;
 }
 
-.aboutme p {
-    margin-right: 30%;
+.aboutme > .sidebar-aboutme {
+    flex: 1 1 30%;
+    max-width: 300px;
+}
+
+.aboutme > .content-aboutme {
+    flex: 1 1 70%;
+    min-width: 50ch;
 }
