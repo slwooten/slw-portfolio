@@ -21,7 +21,6 @@ header {
     align-items: baseline;
     background-color: #495867;
     width: 100%;
-    
 }
 
 header h1 {
@@ -35,6 +34,7 @@ header h1 {
     padding-left: 5%;
     padding-right: 4%; 
 }
+
 
 nav {
     margin-top: 10px;
@@ -57,18 +57,20 @@ nav a:hover {
 
 h2 {
     font-size: 250%;
-    /* border: 2px solid #ff6663; */
     padding: 8px;
     text-align: right;
 }
 
 /* About me formatting */
 
-.maincontent {
+.aboutme {
     display: flex;
-    flex-wrap: wrap;
     align-items: flex-start;
     margin-bottom: 5%;
+}
+
+.aboutme p {
+    line-height: 1.6;
 }
 
 .sidebar-aboutme,
@@ -99,6 +101,12 @@ h2 {
 
 /* Work section formatting */
 
+.work {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5%;
+}
+
 .sidebar-work, .content-work {
     padding: 20px 25px 20px 10px;
 }
@@ -117,7 +125,6 @@ h2 {
 
 .contactinfo {
     display: flex;
-    flex-wrap: wrap;
     align-items: flex-end;
 }
 
@@ -142,6 +149,8 @@ h2 {
     margin-bottom: 12px;
 }
 
+
+
 .content-contact a {
     text-decoration: none;
     background-color: #495867;
@@ -165,3 +174,55 @@ footer {
     margin-top: 50px;
 }
 
+@media screen and (max-width: 804px) {
+    header,
+    .aboutme,
+    .work,
+    .contactinfo,
+    .content-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header h1 {
+        border-right: 3px solid #8aea92;
+    }
+
+    nav a {
+        border-top: 2px solid #8aea92;
+        border-left: 2px solid #8aea92;
+        border-right: 2px solid #8aea92;
+    }
+
+    .content-contact a {
+        margin: 5px 0 5px 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header,
+    .aboutme,
+    .work,
+    .contactinfo,
+    .content-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        border-right: 3px solid #8aea92;
+        border-left: 3px solid #8aea92;
+    }
+
+    nav a {
+        border-top: 2px solid #8aea92;
+        border-left: 2px solid #8aea92;
+        border-right: 2px solid #8aea92;
+    }
+
+    .content-contact a {
+        margin: 5px 0 5px 0;
+    }
+}
