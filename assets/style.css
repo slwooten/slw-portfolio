@@ -97,3 +97,31 @@ h2 {
     flex: 1 1 60%;
     min-width: 50ch;
 }
+
+/* Contact info formattiing */
+
+.sidebar-contact, .content-contact {
+    padding: 15px 10px 15px 10px;
+}
+
+.contactinfo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.contactinfo > .sidebar-contact {
+    flex: 1 1 40%;
+    max-width: 300px;
+}
+
+.contactinfo > .content-contact {
+    flex: 1 1 60%;
+    min-width: 50ch;
+}
+
+.content-contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
