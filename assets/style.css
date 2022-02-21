@@ -49,10 +49,12 @@ nav a:hover {
 
 h2 {
     font-size: 275%;
-    border: 2px solid #ff6663;
+    /* border: 2px solid #ff6663; */
     padding: 8px;
+    text-align: right;
 }
 
+/* About me formatting */
 
 .sidebar-aboutme, .content-aboutme {
     padding: 15px 10px 15px 10px;
@@ -61,15 +63,37 @@ h2 {
 .aboutme {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .aboutme > .sidebar-aboutme {
-    flex: 1 1 30%;
+    flex: 1 1 40%;
     max-width: 300px;
 }
 
 .aboutme > .content-aboutme {
-    flex: 1 1 70%;
+    flex: 1 1 60%;
+    min-width: 50ch;
+}
+
+/* Work section formatting */
+
+.sidebar-work, .content-work {
+    padding: 15px 10px 15px 10px;
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.work > .sidebar-work {
+    flex: 1 1 40%;
+    max-width: 300px;
+}
+
+.work > .content-work {
+    flex: 1 1 60%;
     min-width: 50ch;
 }
