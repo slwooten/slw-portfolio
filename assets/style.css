@@ -98,6 +98,7 @@ h2 {
 
 .aboutme p {
     line-height: 1.6;
+    margin-top: 30px;
 }
 
 .sidebar-aboutme,
@@ -233,7 +234,7 @@ footer {
         margin: 5px 0 5px 0;
     }
 
-    img {
+    .workimages {
         max-width: 500px;
     }
 }
@@ -265,12 +266,17 @@ footer {
         margin: 5px 0 5px 0;
     }
 
-    img {
+    .workimages {
         max-width: 450px;
     }
 }
 
 @media screen and (max-width: 500px) {
+
+    body {
+        padding: 10px;
+    }
+
     header,
     .aboutme,
     .work,
@@ -285,7 +291,7 @@ footer {
     }
 
     .aboutme p {
-        padding: 3px;
+        margin-left: 30px;
     }
 
     header h1 {
@@ -307,14 +313,10 @@ footer {
         margin: 5px 0 5px 0;
     }
 
-    img {
+    .workimages {
         max-width: 200px;
-
     }
 }
- @media screen and (max-width: 460px) {
-
- }
 
 
 
